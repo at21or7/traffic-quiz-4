@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>二輪車の学科問題50問｜無料○×模擬テスト｜村上中央自動車学校</title>
+<meta name="description" content="二輪車の学科試験対策に役立つ無料○×模擬テスト。全50問に挑戦でき、採点・合格判定・間違えた問題の解説と再テストができます。村上中央自動車学校が提供しています。">
 
+<!-- Googleアナリティクス：既存の測定IDを維持 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXPTJ0D324"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SXPTJ0D324');
+</script>
+<style>
+
+*{box-sizing:border-box}
+body{font-family:Arial,'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;background:#eef2f5;color:#111;margin:0;padding:10px}
+.site-header{text-align:center;max-width:900px;margin:18px auto 20px}
+.site-header h1{font-size:34px;line-height:1.4;color:#003366;margin:0 0 16px}
+.school-name,.quiz-title{display:block}
+.quiz-subtitle{font-size:24px;line-height:1.6;color:#555;margin:0}
+#container{max-width:900px;margin:20px auto;background:#fff;border:2px solid #003366;padding:25px}
+#container .question-no{font-size:36px;line-height:1.5;font-weight:bold;color:#003366;margin:0 0 20px}
+#container .question-text{font-size:40px;line-height:1.7;font-weight:bold;margin:0 0 24px;overflow-wrap:anywhere}
+img.question-img{display:block;width:250px;max-width:100%;height:auto;margin:20px auto 24px;border:1px solid #ccc}
+.answer-choices{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.answer-choices button{width:100%;min-height:136px;padding:16px 0;font-family:inherit;font-size:64px;line-height:1.2;font-weight:bold;cursor:pointer;border:2px solid #003366;border-radius:14px;background:#f8fbff;color:#003366;margin:0;touch-action:manipulation}
+.action-btn{font-family:inherit;cursor:pointer;border:2px solid #003366;background:#003366;color:#fff}
+#container .quiz-progress{padding:16px;margin:0 0 24px;background:#f1f6fa;border-radius:12px}
+#container .quiz-progress-label{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:16px;font-weight:bold;color:#003366;line-height:1.6;margin-bottom:10px}
+#container .quiz-progress-label span{min-width:0}
+#container .quiz-progress-label span:last-child{font-weight:normal;color:#526578;white-space:nowrap}
+#container .quiz-progress progress{display:block;width:100%;height:10px;border:0;border-radius:10px;overflow:hidden;background:#dce6ef;accent-color:#003366}
+#container .quiz-progress progress::-webkit-progress-bar{background:#dce6ef;border-radius:10px}
+#container .quiz-progress progress::-webkit-progress-value{background:#003366;border-radius:10px}
+#container .quiz-progress progress::-moz-progress-bar{background:#003366;border-radius:10px}
+#container .menu-link{display:block;text-align:center;min-height:44px;margin:20px 0 8px;padding:12px;font-size:17px;line-height:1.6;color:#003366;text-underline-offset:4px}
+/* 結果画面 */
+#container:has(.result-summary){max-width:820px;border:1px solid #d7e2ec;border-radius:20px;padding:32px;box-shadow:0 8px 30px #0033660a;color:#24364a}
+.result-summary{text-align:center;padding:8px 0 24px}
+.result-summary h2{font-size:18px;color:#526578;margin:0 0 16px}
+.result-status{display:inline-block;border-radius:30px;padding:8px 20px;font-size:18px;font-weight:bold;margin:0;background:#fff0ec;color:#a73521}
+.result-status.passed{background:#e6f5ed;color:#17633e}
+.result-summary .result-score{font-size:76px;color:#003366;line-height:1.15;margin:18px 0 12px;font-weight:bold}
+.result-score small{font-size:24px;color:#65768a;font-weight:normal}
+.result-meta{font-size:17px;line-height:1.8;margin:8px 0;color:#526578}
+.result-message{font-size:18px;line-height:1.8;margin:16px 0 0}
+.result-actions{display:grid;gap:12px;margin:8px 0 30px}
+.result-actions .action-btn{width:100%;min-height:56px;font-size:18px;line-height:1.6;padding:14px 12px;margin:0;border-radius:12px;font-weight:bold}
+.result-actions .secondary{background:#fff;color:#003366;border:1px solid #aabed0}
+button:focus-visible,a:focus-visible{outline:3px solid #dd8500;outline-offset:4px}
+.result-actions button:hover{filter:brightness(.95)}
+.review{border-top:1px solid #d7e2ec;padding-top:24px;margin-top:0}
+.review h3{font-size:22px;margin:0 0 18px;line-height:1.5;color:#003366}
+.review h3 span{font-size:15px;color:#65768a;font-weight:normal;margin-left:8px}
+.review-card{border:1px solid #d7e2ec;border-radius:14px;padding:22px;margin-bottom:16px;background:#fff}
+.review-card h4{font-size:16px;color:#003366;margin:0 0 12px}
+.review .review-card p{font-size:18px;line-height:1.85;margin:0 0 16px;overflow-wrap:anywhere}
+.review-card .answer-label{display:inline-block;background:#edf4fb;color:#003366;font-size:16px;font-weight:bold;padding:6px 12px;border-radius:8px;margin-bottom:14px}
+.review .review-card .explanation{background:#f3f7fa;border-radius:10px;padding:16px;margin:0}
+.explanation strong{display:block;font-size:15px;color:#526578;margin-bottom:6px}
+.school-link{display:block;text-align:center;color:#003366;font-size:16px;line-height:1.7;padding:16px 0;text-underline-offset:4px}
+@media(max-width:600px){
+#container:has(.result-summary){padding:22px 16px;border-radius:16px}
+.result-summary .result-score{font-size:64px}
+.result-score small{font-size:21px}
+.result-meta{font-size:16px}
+.result-message{font-size:17px}
+.review h3{font-size:20px}
+.review-card{padding:18px 16px}
+.review .review-card p{font-size:17px}
+.result-actions .action-btn{font-size:17px}
+}
+
+
+#container .result-status{font-size:18px;line-height:1.6}
+#container .result-summary .result-score{font-size:76px;line-height:1.15}
+#container .result-meta{font-size:17px;line-height:1.8}
+#container .result-message{font-size:18px;line-height:1.8}
+#container .review-card p{font-size:18px;line-height:1.85}
+#container .review-card .answer-label{font-size:16px;line-height:1.6}
+@media(max-width:600px){#container .result-summary .result-score{font-size:64px}#container .result-meta{font-size:16px}#container .result-message,#container .review-card p{font-size:17px}}
+
+
+/* PCとスマホで、3種類すべて共通の表示設定 */
+@media screen and (max-width:600px){
+  body{padding:12px 8px}
+  .site-header{margin:4px auto 12px}
+  .site-header h1{font-size:22px;line-height:1.45;margin:0 0 8px}
+  .site-header .school-name{font-size:16px;font-weight:600;margin-bottom:4px}
+  .quiz-subtitle{font-size:14px;line-height:1.6;color:#526578}
+  #container{padding:16px;margin:12px auto;border:1px solid #c8d9e8;border-radius:14px}
+  #container .question-no{font-size:20px;line-height:1.5;margin:0 0 12px}
+  #container .question-text{font-size:24px;line-height:1.65;font-weight:600;margin:0 0 16px}
+  .question-screen img.question-img{width:200px;max-height:240px;object-fit:contain;margin:16px auto 20px}
+  .answer-choices{gap:12px}
+  .answer-choices button{min-height:80px;padding:8px 0;font-size:48px;line-height:1.25;border-radius:12px}
+  #container .quiz-progress{padding:12px;margin:0 0 16px}
+  #container .quiz-progress-label{font-size:14px;line-height:1.5;gap:4px 8px;margin-bottom:8px}
+  #container .question-screen .menu-link{font-size:15px;line-height:1.6;margin:16px 0 0;padding:10px 4px}
+}
+@media screen and (max-width:360px){
+  #container{padding:14px}
+  #container .quiz-progress-label{font-size:13px}
+  .question-screen img.question-img{width:180px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1><span class="school-name">村上中央自動車学校</span><span class="quiz-title">二輪車問題50問</span></h1>
+  <p class="quiz-subtitle">○×形式・全50問・合格ライン47点</p>
+</header>
+
+<div id="container"></div>
+
+<script>
+const container = document.getElementById("container");
+const PASS_LINE = 47;
+let current = 0;
+let score = 0;
+let wrongList = [];
+let isRetryMode = false; // 誤答再テスト中かどうかを明示的に管理
+
+const questions = [
+{"q":"二輪車のブレーキのかけ方には、ブレーキレバー、ブレーキペダル、エンジンブレーキの3種類がある。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でブレーキをかけるときは乾いた路面では前輪ブレーキ、ぬれた路面では後輪ブレーキをやや強めにかける。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でブレーキをかけるときは、車体を垂直に保ち、ハンドルを切らない状態で、エンジンブレーキ効かせながら前後輪のブレーキを同時にかけるようにする。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でカーブを通行するときは、カーブの途中でクラッチを切って惰力で走行するとよい。","a":false,"e":"カーブ中はクラッチを切りません。二輪車でカーブを通行するときに、途中でクラッチを切って惰力走行をすると、車体が不安定になり危険です。カーブの手前で十分に減速し、カーブ中はクラッチをつないだ状態で一定の速度で通行します。"},
+{"q":"二輪車のブレーキには遊びがない方がよい。","a":false,"e":"ブレーキレバーやブレーキペダルには適度な遊びが必要です。遊びがないとブレーキの引きずりや発熱、効きの低下につながるおそれがあります。"},
+{"q":"二輪車のエンジンブレーキは、スロットルの戻し、または、シフトダウン（低速ギアに入れること）がある。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でカーブを曲がるときは、車体を傾けると横滑りしやすいので、車体を傾けないようにしてハンドルを切るとよい。","a":false,"e":"二輪車はカーブで車体を適度に傾けて曲がります。車体を傾けずにハンドルだけで曲がろうとすると不安定になり危険です。"},
+{"q":"二輪車を運転するときは、ステップに土踏まずを載せて、足先はブレーキを不用意に踏んでしまうことがないように、ブレーキペダルの下に位置するのがよい。","a":false,"e":"足先はブレーキペダルの下ではなく、必要なときすぐ操作できる位置に置きます。"},
+{"q":"二輪車でぬかるみや砂利道を通行するときは、路面が滑りやすいため、急なブレーキ操作や急な加速を避ける。","a":true,"e":"滑りやすい路面では急な操作を避け、速度を十分に落として慎重に通行します。"},
+{"q":"二輪車でぬかるみや砂利道を通行するときは、タンクを両ひざではさみ、路面の状況によっては立ち姿勢をとりバランスを保ちながら走行するのがよい。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車の正しい乗車姿勢は、ステップに土踏まずをのせ、足の裏が水平になるようにし、足先が前方を向くようにして、タンクを両ひざでしめるのがよい。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でカーブを通行するときは、カーブに入る前に十分減速し、カーブ中は急な加減速を避ける。","a":true,"e":"カーブの手前で十分に減速し、カーブ中は急な加速や急減速を避け、安定した速度で通行します。"},
+{"q":"側車付きの自動二輪車は、エンジンを切って押して歩く場合は、歩行者として扱われる。","a":false,"e":"エンジンをかけているものや側車付きのものは歩行者として扱われません。"},
+{"q":"二輪車でカーブを通行するときは、車体を傾けると自然に曲がるので、手前の直線部分であらかじめ速度を落とさなくてもよい。","a":false,"e":"カーブの手前で十分に減速します。"},
+{"q":"二輪車で走行するときは、前の車との車間距離を十分にとることが大切である。","a":true,"e":"前車の急停止などに対応できるよう、速度や路面状況に応じて十分な車間距離をとります。"},
+{"q":"二輪車のチェーンはゆるみがあると危険なので、運行前には必ずいっぱいに張っておくのがよい。","a":false,"e":"チェーンは張りすぎても危険です。適正なゆるみが必要です。"},
+{"q":"二輪車は体で安定を保ちながら走り、停止すれば安定を失うという構造上の特性をもっており、四輪車とは違った運転技術が必要である。","a":true,"e":"問題文の通りです。"},
+{"q":"大型自動二輪か普通自動二輪を受けて1年を経過しない者は大型自動二輪車及び普通自動二輪車で二人乗りすることはできない。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車を選ぶときは、平地でセンタースタンドを楽にたてられるかどうか確かめることも大切である。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車を選ぶときは、またがってみて、片足が地面につき車体が支えられるかどうか、8の字に押して歩くことが完全にできるかどうかを確かめておくことが大切である。","a":false,"e":"片足ではなく、両足のつま先が地面につくことが必要です。"},
+{"q":"原付は自賠責保険への加入が必要である。","a":true,"e":"問題文の通りです。"},
+{"q":"高速道路で二輪車の二人乗りをするには、運転者が20歳以上で、普通二輪免許または大型二輪免許を受けていた期間が通算3年以上必要である。","a":true,"e":"高速道路での二人乗りには、運転者が20歳以上で、普通二輪免許または大型二輪免許の保有期間が通算3年以上必要です。車種・道路による通行制限にも注意します。"},
+{"q":"オートマチック二輪車は、クラッチ操作がいらない分、スロットルを急に回転させると急発進する危険がある。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車でブレーキをかけるときは、必ずクラッチを切ってからかけた方がよい。","a":false,"e":"エンジンブレーキも使います。必ずクラッチを切ってからブレーキをかけるわけではありません。"},
+{"q":"原付の最大積載量は60kgである。","a":false,"e":"原付の最大積載量は30kgまでです。"},
+{"q":"総排気量125cc以下の普通自動二輪車または原動機付自転車で、他の車両をけん引するときの最高速度は30km/hである。","a":false,"e":"道路交通法施行令第12条第2項により、この場合の最高速度は25km/hです。"},
+{"q":"総排気量125ccの普通自動二輪車は高速道路を通行することができる。","a":false,"e":"通行できません。"},
+{"q":"大型二輪免許で普通二輪を運転できる。","a":true,"e":"問題文の通りです。"},
+{"q":"AT二輪車を運転するときは、ニーグリップができないので、足先をステップボードから外側に出してバランスをとるとよい。","a":false,"e":"ステップボードから足先が外側に出ないようにし、足の裏全体を乗せ、足先をまっすぐ前に向けます。"},
+{"q":"二輪車は機動性に富んでいるので、交通が渋滞している時は、車の間をぬって走行することができる。","a":false,"e":"車の間をぬって走行するなど、危険な走行をしてはいけません。"},
+{"q":"二輪車で四輪車の側方を通行しているときは、四輪車の死角に入り、四輪ドライバーに存在を気づかれていないことがあるので注意が必要である。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車の車体は四輪車に比べて小さいため、実際の距離よりも遠くに感じる傾向がある。","a":true,"e":"問題文の通りです。"},
+{"q":"四輪車の近くを二輪車で通行するときは、四輪車が二輪車に気づかないで行動を変えるかもしれないので、注意が必要である。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車で走行中、スロットルが戻らずエンジンの回転数が下がらなくなった場合は、安全を確保しながらエンジンを停止させ、停止する。","a":true,"e":"エンジンの異常時は落ち着いて安全を確保し、エンジン停止と安全な停車を行います。車種の取扱説明書に従ってください。"},
+{"q":"夜間二輪車に乗るときは、反射性の高い衣服または、反射材のついた乗車用ヘルメットを着用した方が良い。","a":true,"e":"問題文の通りです。"},
+{"q":"大型自動二輪車とは、エンジンの総排気量が400ccを超える二輪の自動車のことである。","a":true,"e":"問題文の通りです。"},
+{"q":"オートマチックの二輪車はエンジンブレーキがききやすいので、前後輪のブレーキを多用しないほうがよい。","a":false,"e":"オートマチック二輪車のエンジンブレーキは弱めです。"},
+{"q":"二輪車は四輪車よりも車体が小さく、他の運転者から見落とされやすいため、交差点では特に注意が必要である。","a":true,"e":"交差点では右折車や脇道から出てくる車に見落とされる危険があるため、相手が自分に気づいていない可能性も考えて運転します。"},
+{"q":"二輪車の乗車姿勢は、前かがみになるほど風圧を受けないようになるので、可能な限り前かがみになって運転すると安全である。","a":false,"e":"前かがみになりすぎると視野が狭くなり危険です。"},
+{"q":"二輪車を運転する場合、ハンドルを軽く押すような気持ちでグリップを軽く握る。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車を運転するときは、肩の力を抜き、ひじを軽く曲げてハンドルを握る。","a":true,"e":"肩や腕に余分な力を入れず、ひじを軽く曲げると操作しやすくなります。"},
+{"q":"エンジンを止めた二輪車に乗って坂を下る場合は、歩行者扱いになるので歩道を通行できる。","a":false,"e":"エンジンを止め、二輪車から降りて押して歩かなければ歩行者とはみなされません。"},
+{"q":"二輪車を運転する場合、前輪ブレーキは後輪ブレーキに比べて効きが悪いので、通常はおもに後輪ブレーキを使い、前輪ブレ―キは緊急時のみ使う。","a":false,"e":"前輪ブレーキの方がよく効き、ブレーキは前後輪を同時にかけるようにします。"},
+{"q":"二輪車はエンジンを切り押して歩いても歩行者ではないので歩道を通行することはできない。","a":false,"e":"エンジンを切り、押して歩いている場合は歩行者とみなされます。"},
+{"q":"二輪車に乗車時のヘルメットは、頭のサイズに合った規格品で、強度があり重くないものを選ぶとよい。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車のブレーキのかけ方には、ブレーキレバーやブレーキペダルを使って前後輪ブレーキを効かせる方法のほかに、スロットルのもどし、またはシフトダウンによるエンジンブレーキがある。","a":true,"e":"問題文の通りです。"},
+{"q":"オートマチック二輪車に無段変速装置が採用されている場合、エンジンの回転数が低いときには車輪にエンジンの力が伝わりにくくなる。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車を運転するときは、PSCマークかJISマークのついた乗車用ヘルメットを着用しあごひもを確実にしめる。","a":true,"e":"問題文の通りです。"},
+{"q":"二輪車は自賠責保険か責任共済が切れていても任意保険に加入していれば運転することができる。","a":false,"e":"自賠責保険か責任共済が切れた状態で運転してはいけません。"},
+{"q":"二輪車を運転するときの服装は、身体の露出が多いと疲労しやすいうえ、転倒したときの被害が大きくなるので、露出が少ないものがよい。","a":true,"e":"問題文の通りです。"}
+];
+
+// 元の問題番号を保存
+questions.forEach((q, i) => q.no = i + 1);
+
+// 全50問の元データを保存
+const questionsMaster = [...questions];
+
+
+function progressMarkup(){
+  return `<div class="quiz-progress"><div class="quiz-progress-label"><span>${isRetryMode ? '再テスト' : 'テスト'}：現在${current + 1}問目／全${questions.length}問</span><span>回答済み ${current}問</span></div><progress value="${current}" max="${questions.length}" aria-label="回答済みの問題数">${current}／${questions.length}</progress></div>`;
+}
+
+function showQuestion(){
+  if(current === 0) window.scrollTo(0, 0);
+  const q = questions[current];
+  const imgHtml = q.img ? `<img src="${q.img}" class="question-img" alt="第${q.no}問の標識・図">` : "";
+  container.innerHTML = `<section class="question-screen">${progressMarkup()}
+    <p class="question-no">【第 ${q.no} 問】</p>
+    <p class="question-text">${q.q}</p>
+    ${imgHtml}
+    <div class="answer-choices">
+      <button aria-label="○：正しい" onclick="answer(true)">○</button>
+      <button aria-label="×：誤り" onclick="answer(false)">×</button>
+    </div>
+    <a class="menu-link" href="https://at21or7.github.io/">← 問題メニューに戻る</a>
+  </section>`;
+}
+
+function answer(val){
+  const q = questions[current];
+
+  if(val === q.a){
+    score++;
+  }else{
+    wrongList.push({
+      no: q.no,
+      q: q.q,
+      e: q.e
+    });
+  }
+
+  current++;
+  current < questions.length ? showQuestion() : showResult();
+}
+
+function showResult(){
+  const isFullTest = !isRetryMode && questions.length === questionsMaster.length;
+  const passLine = isFullTest ? PASS_LINE : questions.length;
+
+  // 50問を最後まで解答した場合のみ送信（誤答再テストは対象外）
+  if (isFullTest && typeof gtag === "function") {
+    gtag("event", "quiz_complete", {
+      quiz_type: "motorcycle",
+      score: score
+    });
+    if (score >= PASS_LINE) {
+      gtag("event", "quiz_pass", {
+        quiz_type: "motorcycle",
+        score: score
+      });
+    }
+  }
+
+  const passed = score >= passLine;
+  const rate = Math.round(score / questions.length * 100);
+  const status = isFullTest ? (passed ? "合格" : "不合格") : (passed ? "復習クリア" : "もう一度復習しましょう");
+  const message = wrongList.length
+    ? `間違えた${wrongList.length}問を復習して、${isFullTest ? "合格" : "全問正解"}を目指しましょう。`
+    : "全問正解です！よくできました。";
+  const actions = `
+    <div class="result-actions">
+      ${wrongList.length ? `<button class="action-btn" onclick="retryWrong()">間違えた${wrongList.length}問を再テスト</button>` : ""}
+      <button class="action-btn ${wrongList.length ? "secondary" : ""}" onclick="restartAll()">最初から50問に挑戦</button>
+    </div>`;
+  let html = `
+    <section class="result-summary" aria-labelledby="result-title">
+      <h2 id="result-title" tabindex="-1">${isFullTest ? "テスト結果" : "再テスト結果"}</h2>
+      <p class="result-status ${passed ? "passed" : ""}">${status}</p>
+      <p class="result-score">${score}<small> / ${questions.length}点</small></p>
+      <p class="result-meta">${isFullTest ? `合格ライン ${PASS_LINE}点` : "再テストの目標：全問正解"}<br>正答率 ${rate}%${!passed ? `・${isFullTest ? "合格" : "全問正解"}まであと${passLine - score}点` : ""}</p>
+      <p class="result-message">${message}</p>
+    </section>
+    ${actions}
+  `;
+  if(wrongList.length){
+    html += `<section class="review"><h3>間違えた問題の解説 <span>${wrongList.length}問</span></h3>`;
+    wrongList.forEach(w=>{
+      const correctAnswer = questionsMaster.find(q => q.no === w.no).a;
+      html += `
+        <article class="review-card">
+          <h4>第${w.no}問</h4>
+          <p>${w.q}</p>
+          <div class="answer-label">正解：${correctAnswer ? "○" : "×"}</div>
+          <p class="explanation"><strong>解説</strong>${w.e}</p>
+        </article>`;
+    });
+    html += `</section>${actions}`;
+  }
+  html += `<a class="menu-link" href="https://at21or7.github.io/">← 問題メニューに戻る</a><a class="school-link" href="https://murakami-ds.com/">村上中央自動車学校 公式サイトへ →</a>`;
+
+  container.innerHTML = html;
+  document.getElementById("result-title").focus();
+  window.scrollTo(0, 0);
+}
+
+function retryWrong(){
+  const retryNumbers = wrongList.map(w => w.no);
+  const retryQuestions = questionsMaster.filter(q => retryNumbers.includes(q.no));
+
+  questions.length = 0;
+  retryQuestions.forEach(q => questions.push(q));
+
+  current = 0;
+  score = 0;
+  wrongList = [];
+  isRetryMode = true;
+
+  showQuestion();
+}
+
+function restartAll(){
+  questions.length = 0;
+  questionsMaster.forEach(q => questions.push(q));
+
+  current = 0;
+  score = 0;
+  wrongList = [];
+  isRetryMode = false;
+
+  showQuestion();
+}
+
+showQuestion();
+</script>
+
+</body>
+</html>
